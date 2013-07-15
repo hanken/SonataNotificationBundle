@@ -6,7 +6,6 @@ To begin, add the dependent bundles to the vendor/bundles directory. Add the fol
     [SonataNotificationBundle]
         git=git://github.com/sonata-project/SonataNotificationBundle.git
         target=/bundles/Sonata/NotificationBundle
-        version=origin/2.0
 
     [PhpAmqplib]
         git=git://github.com/videlalvaro/php-amqplib.git
@@ -37,7 +36,7 @@ Update the ``autoload.php`` to add new namespaces:
     $loader->registerNamespaces(array(
         'Sonata'          => array(
             __DIR__ .'/../vendor/bundles',
-            __DIR__.'/../sonata-doctrine-extensions/src',
+            __DIR__.'/../vendor/sonata-doctrine-extensions/src',
         ),
         'PhpAmqpLib'      => __DIR__ . '/../vendor/php-amqplib',
         // ... other declarations
